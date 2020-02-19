@@ -5,14 +5,14 @@ using System.Text;
 
 namespace AutoShop_Shared.Services
 {
-    interface IArticleService
+    public interface IArticleService
     {
-        public List<Article> GetUsers();
-        public Article GetUser(string id = "", string partitionkey = "");
+        public List<Article> GetArticle();
+        public Article GetArticle(string id = "", string partitionkey = "");
 
-        public Article AddUser(Article item);
+        public Article AddArticle(Article item);
 
-        public Article UpdateUser(Article item);
+        public Article UpdateArticle(Article item);
 
         public void DeleteArticle(string id, string PartitionKey = "");
     }
