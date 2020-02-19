@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "partitionKey": "",
+    "label": "carrot_peas",
+    "prix": "1.99",
+    "tag": "petits_pois_carotts",
+    "photo": "petits_pois_carottes.jpg"
+
+  },
+  {
+    "id": "2",
+    "partitionKey": "",
+    "label": "tomatoes",
+    "prix": "0.99",
+    "tag": "tomates",
+    "photo": "tomates.jpg"
+  },
+  {
+    "id": "3",
+    "partitionKey": "",
+    "label": "Beer",
+    "prix": "2.50",
+    "tag": "biere",
+    "photo": "biere.jpg"
+  },
+  {
+    "id": "4",
+    "partitionKey": "",
+    "label": "coca",
+    "prix": "1.20",
+    "tag": "coca",
+    "photo": "coca.jpg"
+  }
+
+]

@@ -1,0 +1,40 @@
+﻿
+@model List<AutoShop_Shared.Models.Article>
+
+
+<h1>Liste d'Articles</h1>
+
+<div class="row card-deck">
+    @foreach (Article item in Model)
+    {
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <div class="card-title">@item.Id</div>
+            </div>
+
+            <div class="card-body">
+
+                <div class="card-title">@item.Label</div>
+
+                <div class="card-img"><img class="w-50" src="~/images/@item.Photo" /></div>
+
+                <div class="card-title">@item.Prix</div>
+
+                <div class="card-title">@item.Tag</div>
+
+            </div>
+
+            <div class="card-footer">
+                <button class="btn btn-primary" type="button">
+                    Acheter
+                </button>
+
+            </div>
+        </div>
+
+    }
+
+</div>

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "707D859D-AB67-44F3-8CFE-DB0C78566DC8",
+    "email": "bertrand@renard.fr",
+    "lastName": "Renard",
+    "firstName": "Bertrand",
+    "photo": "user2.png",
+    "level": 40,
+    "experience": 150000,
+    "badge": {
+      "title": "badge1",
+      "photo": "badge1.jpg",
+      "label": "starter"
+    },
+    "achievements": []
+  },
+  {
+    "id": "EE964C2A-44C1-44DC-9F38-E539FB58AA42",
+    "email": "rocco@.paraide.fr",
+    "lastName": "Paraide",
+    "firstName": "Rocco",
+    "photo": "user3.png",
+    "level": 30,
+    "experience": 188000,
+    "badge": {
+      "title": "badge2",
+      "photo": "badge2.jpg",
+      "label": "medium"
+    },
+    "achievements": []
+  },
+
+  {
+    "id": "A33AA9BE-E8CA-46AC-9F89-7CE50B1B6322",
+    "email": "titus@zoe.fr",
+    "lastName": "Zoe",
+    "firstName": "Titus",
+    "photo": "user4.png",
+    "level": 90,
+    "experience": 122000,
+    "badge": {
+      "title": "badge1",
+      "photo": "badge1.jpg",
+      "label": "advanced"
+    },
+    "achievements": []
+
+  }
+
+]
+
+

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "badge1",
+    "partitionKey" : "Badges",
+    "title": "badge1",
+    "photo": "badge1.jpg",
+    "label": "starter"
+
+  },
+  {
+    "id": "badge2",
+    "partitionKey": "Badges",
+    "title": "badge2",
+    "photo": "badge2.jpg",
+    "label": "medium"
+
+  },
+  {
+    "id": "badge3",
+    "partitionKey": "Badges",
+    "title": "badge3",
+    "photo": "badge3.jpg",
+    "label": "advanced"
+
+  }
+]

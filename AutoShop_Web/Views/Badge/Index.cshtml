@@ -1,0 +1,40 @@
+﻿
+@model List<AutoShop_Shared.Models.Badge>
+
+
+<h1>Liste de Badges</h1>
+
+<div class="row card-deck">
+    @foreach (Badge item in Model)
+    {
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <div class="card-title">@item.Title</div>
+            </div>
+
+            <div class="card-body">
+                <img class="w-25" src="~/images/@item.Photo" />
+
+                <div class="card-title">@item.Label</div>
+
+            </div>
+
+            <div class="card-footer">
+                <button class="btn btn-primary" type="button">
+                    Valider
+                </button>
+                @Html.ActionLink("Ajouter", "Add", new { id = item.ID }, new { @class = "btn btn-secondary  mr-2" })
+
+                @Html.ActionLink("Detail", "Detail", new { id = item.ID }, new { @class = "btn btn-secondary  mr-2" })
+
+                @Html.ActionLink("supprimer", "Delete", new { id = item.ID }, new { @class = "btn btn-secondary  mr-2" })
+
+            </div>
+        </div>
+
+    }
+
+</div>

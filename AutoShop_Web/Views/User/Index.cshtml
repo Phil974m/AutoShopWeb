@@ -1,0 +1,67 @@
+﻿@model List<AutoShop_Shared.Models.User>
+
+
+<h1>Liste d'utilisateurs</h1>
+@{const int maxLevel = 100;
+    const int maxExperience = 400000;
+}
+<div class="row card-deck">
+    @foreach (User item in Model)
+    {
+
+
+        int level = (item.Level * 100) / maxLevel;
+        uint exp = (item.Experience * 100) / maxExperience;
+
+        <div class="card">
+
+            <div class="card-header bg-info text-white">
+
+                <div class="card-title">@item.Email</div>
+            </div>
+
+            <div class="card-body">
+                <div class="card-img"><img class="w-50" src="~/images/@item.Photo" /></div>
+
+                <div class="card-title">@item.LastName @item.FirstName</div>
+
+                @if (item.ActiveBadge != null)
+                {
+                    <div> @item.ActiveBadge.Title</div>
+                    <div> @item.ActiveBadge.Label</div>
+                    <div class="card-img"><img class="w-25" src="~/images/@item.ActiveBadge.Photo"></div>;
+                }
+
+                <div class="card-title">Niveau</div>
+                <div class="progress">
+                    <div class="progress-bar bg-success text-dark text-white" role="progressbar" aria-valuenow="@item.Level"
+                         aria-valuemin="0" aria-valuemax="@maxLevel" style="width:@level%">@item.Level </div>
+                    </div>
+
+                    <div class="card-title">Experience</div>
+                    <div class="progress bg-Secondary ">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="@item.Experience"
+                             aria-valuemin="0" aria-valuemax="@maxExperience" style="width:@exp%">
+                            @item.Experience.ToString("N0")/ @maxExperience.ToString("N0")
+                        </div>
+                    </div>
+                    
+
+                    <div class="card-footer">
+
+                       
+
+                        @Html.ActionLink("Ajouter", "Add", new { id = item.ID }, new { @class = "btn btn-secondary  mr-2" })
+
+                        @Html.ActionLink("Detail", "Detail", new { id = item.ID }, new { @class = "btn btn-secondary  mr-2" })
+
+                        @Html.ActionLink("Supprimer", "Delete", new { id = item.ID }, new { @class = "btn btn-secondary  mr-2" })
+
+                        @Html.ActionLink("Upload", "Upload", new { id = item.ID }, new { @class = "btn btn-secondary  mr-2" })
+                    </div>
+
+
+                </div>
+                </div>
+        }
+</div>

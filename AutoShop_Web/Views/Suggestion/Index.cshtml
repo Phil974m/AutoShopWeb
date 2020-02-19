@@ -1,0 +1,14 @@
+﻿@model List<AutoShop_Shared.Models.Suggestion>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+Nombre de suggestion : @Model.Count()
+
+@foreach (Suggestion item in Model)
+{
+    <h2>@item.Title</h2>
+}
+
